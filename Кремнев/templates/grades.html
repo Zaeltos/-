@@ -1,0 +1,20 @@
+<h1>Мои оценки {{title_suffix}}</h1>
+{{back_link}}
+
+<div class="cards">
+  <div class="card stat">
+    <span class="stat__value">{{avg}}</span>
+    <span class="stat__label">Средний балл</span>
+  </div>
+  <div class="card stat">
+    <span class="stat__value">{{total}}</span>
+    <span class="stat__label">Всего оценок</span>
+  </div>
+</div>
+
+{{add_section}}
+
+<section class="card">
+  <h2>Журнал</h2>
+  {{grades_table}}
+</section>

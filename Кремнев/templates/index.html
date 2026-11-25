@@ -1,0 +1,27 @@
+<h1>Привет, {{username}}! 👋</h1>
+<p class="muted">Сегодня {{today_date}}{{today_name_part}}</p>
+
+<div class="cards">
+  <div class="card stat">
+    <span class="stat__value">{{avg}}</span>
+    <span class="stat__label">Средний балл</span>
+  </div>
+  <div class="card stat">
+    <span class="stat__value">{{count}}</span>
+    <span class="stat__label">Всего оценок</span>
+  </div>
+  <div class="card stat">
+    <span class="stat__value">{{lessons_count}}</span>
+    <span class="stat__label">Уроков сегодня</span>
+  </div>
+</div>
+
+<section class="card">
+  <h2>Расписание на сегодня</h2>
+  {{lessons_html}}
+</section>
+
+<section class="card">
+  <h2>Последние оценки</h2>
+  {{grades_html}}
+</section>
